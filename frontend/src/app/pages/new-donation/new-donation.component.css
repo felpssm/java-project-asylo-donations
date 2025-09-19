@@ -1,0 +1,136 @@
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.form-section {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-section h4 {
+  color: #495057;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.text-primary {
+  color: #667eea !important;
+}
+
+/* Estilos para os cards de seleção de tipo de doação */
+.donation-type-card {
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.donation-type-card.selected {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.donation-type-card.border-success {
+  border-color: #28a745 !important;
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.05) 0%, rgba(40, 167, 69, 0.02) 100%);
+}
+
+.donation-type-card.border-info {
+  border-color: #17a2b8 !important;
+  background: linear-gradient(135deg, rgba(23, 162, 184, 0.05) 0%, rgba(23, 162, 184, 0.02) 100%);
+}
+
+.donation-icon {
+  position: relative;
+}
+
+.donation-icon i {
+  transition: all 0.3s ease;
+}
+
+.donation-type-card:hover .donation-icon i {
+  transform: scale(1.1);
+}
+
+.donation-type-card .card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.donation-type-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.donation-type-card .features {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 0.75rem;
+}
+
+.donation-type-card .features small {
+  line-height: 1.6;
+}
+
+/* Animação de seleção */
+.donation-type-card.selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.donation-type-card.selected.border-info::before {
+  background: linear-gradient(90deg, #17a2b8, #20c997);
+}

@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: asilo-doacoes-db
+    environment:
+      POSTGRES_DB: doacoes
+      POSTGRES_USER: asilo
+      POSTGRES_PASSWORD: asilo123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

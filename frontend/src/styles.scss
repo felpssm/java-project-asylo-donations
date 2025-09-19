@@ -1,0 +1,153 @@
+/* TailwindCSS Base */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2.5 px-6 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-700 font-medium py-2.5 px-6 rounded-lg transition-all duration-200 border border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-2.5 px-6 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-medium py-2.5 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-soft border border-secondary-200 transition-all duration-300 hover:shadow-medium;
+  }
+
+  .card-header {
+    @apply px-6 py-4 border-b border-secondary-200 bg-secondary-50 rounded-t-xl;
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 bg-white text-secondary-900 placeholder-secondary-500;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-secondary-700 mb-2;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-primary-100 text-primary-800;
+  }
+
+  .badge-success {
+    @apply bg-accent-100 text-accent-800;
+  }
+
+  .badge-warning {
+    @apply bg-warning-100 text-warning-800;
+  }
+
+  .badge-danger {
+    @apply bg-danger-100 text-danger-800;
+  }
+
+  .navbar {
+    @apply bg-white shadow-sm border-b border-secondary-200;
+  }
+
+  .navbar-brand {
+    @apply text-xl font-bold text-primary-600 flex items-center space-x-2;
+  }
+
+  .nav-link {
+    @apply text-secondary-600 hover:text-primary-600 font-medium transition-colors duration-200 flex items-center space-x-1;
+  }
+
+  .nav-link.active {
+    @apply text-primary-600 font-semibold;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  }
+
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+}
+
+/* Legacy Bootstrap Compatibility */
+.container-fluid {
+  @apply px-0;
+}
+
+/* Slider Styles - Modernized */
+.slider-container {
+  @apply relative overflow-hidden rounded-2xl;
+}
+
+.slider-item {
+  @apply relative h-96 bg-cover bg-center flex items-center justify-center;
+}
+
+.slider-content {
+  @apply text-center text-white bg-black bg-opacity-40 p-8 rounded-2xl backdrop-blur-sm;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .slider-item {
+    @apply h-64;
+  }
+  
+  .slider-content {
+    @apply p-4;
+  }
+}

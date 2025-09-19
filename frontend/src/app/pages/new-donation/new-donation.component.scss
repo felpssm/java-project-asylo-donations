@@ -1,0 +1,81 @@
+/* New Donation Component Styles */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), #0056b3);
+}
+
+/* Tipo de Doação */
+.donation-type-card {
+  position: relative;
+}
+
+.donation-type-card .form-check-input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.donation-type-card .card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-color: #dee2e6;
+}
+
+.donation-type-card .form-check-input:checked + .form-check-label .card {
+  border-color: var(--primary-color);
+  background-color: rgba(13, 110, 253, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+.donation-type-card:hover .card {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Seções */
+h5 {
+  border-bottom: 2px solid;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem !important;
+}
+
+h5.text-primary {
+  border-color: var(--primary-color);
+}
+
+h5.text-success {
+  border-color: #198754;
+}
+
+h5.text-info {
+  border-color: #0dcaf0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .donation-type-card .d-flex {
+    flex-direction: column;
+  }
+  
+  .gap-3 {
+    gap: 0.5rem !important;
+  }
+}

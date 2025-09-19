@@ -1,0 +1,88 @@
+/* About Component Styles */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), #0056b3);
+}
+
+.fa-10x {
+  font-size: 10rem;
+}
+
+/* Timeline */
+.timeline-year {
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  width: 2px;
+  height: 50px;
+  background-color: #dee2e6;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline-item::after {
+    left: 40px;
+  }
+  
+  .timeline-year {
+    width: 60px;
+    height: 60px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Equipe */
+.fa-user-circle {
+  opacity: 0.8;
+}
+
+/* Call to Action */
+.bg-primary {
+  background: linear-gradient(135deg, var(--primary-color), #0056b3) !important;
+}
+
+.gap-3 {
+  gap: 1rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fa-10x {
+    font-size: 6rem;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .gap-3 {
+    gap: 0.5rem !important;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,50 @@
+/* Footer Component Styles */
+footer {
+  margin-top: auto;
+}
+
+.bg-darker {
+  background-color: #212529 !important;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color) !important;
+  transform: translateY(-2px);
+}
+
+.badge {
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.badge:hover {
+  background-color: var(--primary-color) !important;
+}
+
+footer a:hover {
+  color: var(--primary-color) !important;
+}
+
+footer h5 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-links {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  
+  .col-md-6 {
+    text-align: center !important;
+  }
+}

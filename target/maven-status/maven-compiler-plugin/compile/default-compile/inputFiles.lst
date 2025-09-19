@@ -1,0 +1,17 @@
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/DoacoesApplication.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/config/SecurityConfig.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/controller/DonationController.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/controller/DonorController.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/domain/Donation.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/domain/Donor.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/domain/enums/DonationType.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/dto/DonationRequest.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/dto/DonationResponse.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/dto/DonorRequest.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/dto/DonorResponse.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/exception/GlobalExceptionHandler.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/mapper/Mappers.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/repository/DonationRepository.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/repository/DonorRepository.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/service/DonationService.java
+/Users/felipe/faculdade/5 semestre/Projeto Integrador - VI - A/asilo-doacoes copy/src/main/java/br/org/asilo/doacoes/service/DonorService.java

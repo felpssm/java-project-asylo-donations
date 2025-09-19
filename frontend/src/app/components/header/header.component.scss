@@ -1,0 +1,38 @@
+/* Header Component - Usando apenas Tailwind CSS */
+
+/* Animações customizadas para o carousel */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Estilos customizados específicos se necessário */
+
+/* Rotação da seta dos dropdowns */
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Transição suave para as setas */
+.fas.fa-chevron-down {
+  transition: transform 0.2s ease-in-out;
+}
