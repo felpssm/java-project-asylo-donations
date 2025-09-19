@@ -403,16 +403,3 @@ npx webpack-bundle-analyzer dist/asilo-doacoes-frontend/stats.json
 
 Este projeto foi desenvolvido como parte do **Projeto Integrador VI-A** do curso de **Análise e Desenvolvimento de Sistemas**.
 
----
-
-**🏠 Desenvolvido para o Asilo de Mendigos de Pelotas**  
-*Sistema de Controle de Doações - Facilitando a gestão e transparência das doações recebidas*
-
----
-
-### 📞 Suporte
-
-Para dúvidas ou sugestões sobre o sistema, entre em contato através dos canais oficiais do asilo.
-
-**Versão:** 1.0.0  
-**Última atualização:** Janeiro 2024
